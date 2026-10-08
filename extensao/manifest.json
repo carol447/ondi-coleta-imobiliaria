@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Zap Scraper",
+  "version": "1.0.7",
+  "description": "Coleta anúncios do Zap Imóveis em santo andre e exporta CSV/Excel.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.zapimoveis.com.br/*",
+    "https://zapimoveis.com.br/*",
+    "http://localhost:5000/*",
+    "http://127.0.0.1:5000/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.zapimoveis.com.br/*",
+        "https://zapimoveis.com.br/*"
+      ],
+      "js": [
+        "worker_config.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

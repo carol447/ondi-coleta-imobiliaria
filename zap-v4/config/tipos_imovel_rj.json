@@ -1,0 +1,13 @@
+[
+  {"id":"apartamento_residencial","rotulo":"Apartamento"},
+  {"id":"studio_residencial","rotulo":"Studio"},
+  {"id":"casa_residencial","rotulo":"Casa"},
+  {"id":"condominio_residencial","rotulo":"Casa de condomínio"},
+  {"id":"casa-vila_residencial","rotulo":"Casa de vila"},
+  {"id":"cobertura_residencial","rotulo":"Cobertura"},
+  {"id":"flat_residencial","rotulo":"Flat"},
+  {"id":"loft_residencial","rotulo":"Loft"},
+  {"id":"lote-terreno_residencial","rotulo":"Lote ou terreno"},
+  {"id":"sobrado_residencial","rotulo":"Sobrado"},
+  {"id":"kitnet_residencial","rotulo":"Kitnet"}
+]

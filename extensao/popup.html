@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Viva Real Scraper</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 14px;
+      font-family: Arial, sans-serif;
+      color: #1f2937;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0 0 8px;
+    }
+    p {
+      font-size: 12px;
+      margin: 4px 0 12px;
+      line-height: 1.35;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #start { background: #0b8cff; color: white; }
+    #stop { background: #ef4444; color: white; }
+    #reset { background: #e5e7eb; color: #111827; }
+    #exportar { background: #16a34a; color: white; }
+    #status {
+      margin-top: 12px;
+      padding: 10px;
+      border-radius: 8px;
+      background: #f3f4f6;
+      font-size: 12px;
+      white-space: pre-line;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <h1>Zap Imoveis Scraper</h1>
+  <p>Abra a listagem de compra em Presidente Prudente, ligue o servidor e clique em iniciar.</p>
+
+  <button id="start">Iniciar coleta</button>
+  <button id="stop">Parar</button>
+  <button id="reset">Resetar progresso</button>
+  <button id="exportar">Gerar Excel final</button>
+
+  <div id="status">Status: aguardando...</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
